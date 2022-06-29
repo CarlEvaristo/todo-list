@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 html {
     font-size: 62,5%;
 }
@@ -37,7 +40,7 @@ li {
 input, button {
     background: white;
     font: inherit;
-    padding: 1em 2em;
+    padding: 1em 1.5em;
     border: none;
     border-radius: 5px;
 }
@@ -46,4 +49,13 @@ button:hover {
 }
 button:active {
     background: rgb(220, 220, 220);
+}
+
+@media (max-width:700px) {
+    .container {
+        width: 90%;
+    }
+    input {
+        width: 45vw;
+    }
 }
