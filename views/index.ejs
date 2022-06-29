@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+
+    <title>Todo List</title>
+</head>
+<body>
+    <div class="container">
+        <form action="/" method="post">
+            <input type="text" name="item" placeholder="Add new item" required>
+            <button type="submit" name="submit">Add</button>
+        </form>
+        
+        <ul>
+        <% for (let item of items) { %>
+        <li> <%= item %> </li>
+        <% } %>
+        </ul>
+    </div>
+    
+</body>
+</html>
